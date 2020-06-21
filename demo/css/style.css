@@ -1,0 +1,125 @@
+body,img,ul,li {
+  padding: 0px;
+  margin: 0px;
+  background: #f4f4f4;
+}
+
+#header {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.header {
+  width: 1200px;
+  height: 40px;
+  border: 1px red solid;
+  margin: 0 auto;
+}
+.header_left {
+  width: 400px;
+  height: 40px;
+  border: 1px green solid;
+  float: left;
+}
+.header_right {
+  width: 400px;
+  height: 40px;
+  border: 1px solid black;
+  float: right;
+}
+/*header style edn*/
+/*logo style start*/
+#logo {
+  width: 1200px;
+  height: 100px;
+  border: 1px solid blue;
+  margin: 10px auto;
+}
+.logo_left {
+  width: 300px;
+  height: 100px;
+  border: 1px solid red;
+  float: left;
+}
+.logo_right {
+  width: 120px;
+  height: 100px;
+  border: 1px solid red;
+  float: right;
+}
+/*logo style end*/
+/*nav style start*/
+#nav {
+  width: 1200px;
+  height: 40px;
+  border: 1px solid red;
+  margin: 0px auto;
+}
+.nav_left {
+  width: 300px;
+  height: 40px;
+  border: 1px solid blue;
+  float: left;
+}
+.nav_right {
+  width: 150px;
+  height: 40px;
+  border: 1px solid darkkhaki;
+  float: right;
+}
+.nav_center {
+  width: 700px;
+  height: 40px;
+  border: 1px solid indigo;
+  float: left;
+}
+/*nav style end*/
+/*banner style start*/
+#banner {
+  position: relative;
+}
+.banner {
+  width: 100%;
+  height: 400px;
+  border: 1px solid  red;
+  margin: 5px auto;
+}
+#p_content {
+  width: 1200px;
+  height: 516px;
+  border: 1px solid #5ea732;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 1200px / 2);
+}
+.banner_nav {
+  width: 240px;
+  height: 516px;
+  border: 1px solid darkred;
+  float: left;
+}
+.banner_right {
+  width: 950px;
+  height: 516px;
+  border: 1px solid darkred;
+  float: right;
+}
+.banner_login {
+  width: 950px;
+  height: 396px;
+  border: 1px solid navy;
+}
+.banner_bottom {
+  width: 950px;
+  height: 114px;
+  border: 1px solid #5ea732;
+}
+.banner_bottom>div {
+  width: 220px;
+  height: 114px;
+  border: 1px solid blue;
+  float: left;
+  margin-left: 8px;
+}
+/*banner style start*/

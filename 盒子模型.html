@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>盒子模型</title>
+  <style>
+    #box {
+      width: 620px;
+      height: 620px;
+      background-color: pink;
+    }
+    #box>div:first-child {
+      width: 600px;
+      height: 100px;
+      background-color: gold;
+      float: left;
+    }
+    #box>div:nth-child(2) {
+      width: 100px;
+      height: 400px;
+      background: green;
+      float: left;
+    }
+    #box>div:nth-child(4) {
+      width: 100px;
+      height: 400px;
+      background-color: yellowgreen;
+      float: left;
+    }
+    #box>div:nth-child(5){
+      width: 600px;
+      height: 100px;
+      background: #0985db;
+      float: left;
+    }
+    #self {
+      width: 400px;
+      height: 400px;
+      background: #42b983;
+      float: left;
+      margin: 10px;
+    }
+    #block {
+      width: 1200px;
+      background: #eb4868;
+      height: 40px;
+      /*设置居中*/
+      margin: 10px auto;
+    }
+    #box1 {
+      width: 200px;
+      height: 200px;
+      background: red;
+      margin-bottom: 50px;
+    }
+    #box2 {
+      width: 200px;
+      height: 200px;
+      background: yellowgreen;
+      margin-top: 25px;
+    }
+    #father {
+      width: 200px;
+      height: 200px;
+      background: red;
+      border: 1px red solid; /* 解决间距合并的问题 没有这个的话父元素会跟着下来*/
+    }
+    #son{
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <div>顶部元素</div>
+    <div>左部元素</div>
+    <div id="self">当前元素</div>
+    <div>又部元素</div>
+    <div>下部元素</div>
+  </div>
+<!--margin可以设置块状元素居中-->
+  <div id="block"></div>
+<!--  外间距合并，以大的为最后效果，注：外间距只支持上下合并-->
+  <div id="box1"></div>
+  <div id="box2"></div>
+<!--外间距包含合并-->
+  <div id="father">
+    <div id="son"></div>
+  </div>
+</body>
+</html>

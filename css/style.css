@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+}
+
+#header {
+  width: 100%;
+  height: 40px;
+  /*background-color: orangered;*/
+}
+.header {
+  width: 1200px;
+  height: 40px;
+  /*background-color: green;*/
+  border: 1px solid red;
+}
+.header_left {
+  width: 400px;
+  height: 40px;
+  /*background-color: aqua;*/
+  float: left;
+  color:#a1a6ac
+}
+.header_right {
+  width: 500px;
+  height: 40px;
+  background-color: yellow;
+  float: right;
+}
+/*设置头部内容样式*/
+.header_left>div {
+  float: left;
+  /*background: red;*/
+  line-height: 40px;
+}
+.header_left>div>span {
+  font-weight: bold;
+}
+.header_left>div:nth-child(2)>a,.header_left>div:nth-child(2)>a>img {
+  float: left;
+  color: #a1a6ac;
+}
+.header_left>div:nth-child(2)>a>img {
+  width: 17px;
+}

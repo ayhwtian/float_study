@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>absolute</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+    }
+    #box1 {
+      background-color: red;
+    }
+    #box2 {
+      background-color: green;
+      /*绝对定位
+        绝对定位的元素不会占用原有的位置
+        以其他元素为参照物移动指定距离的定位方式
+        1.如果元素的外层元素是非static的定位，那么这个外层元素就成为该元素的定位参考
+        2.如果元素的外层没有设置任何position的值，那么该元素将寻找离自己最近的其他设置过position的元素作为参考
+        3.如果外层元素没有任何设置过position，此时定位参考点便为body或页面
+      */
+      position: relative;
+      /*top: 200px;*/
+      /*left: 200px;*/
+    }
+    #father {
+      background-color: aquamarine;
+      width: 200px;
+      height: 200px;
+    }
+    #son {
+      background-color: #eec989;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+    #box3 {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div id="box1"></div>
+    <div id="box2">
+      <div id="father">
+        <div id="son"></div>
+      </div>
+    </div>
+    <div id="box3"></div>
+  </div>
+</body>
+</html>

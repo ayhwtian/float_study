@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>float</title>
+  <style>
+    #box {
+      width: 600px;
+      height: 600px;
+      background-color: #eb4868;
+      /*不设置宽高的情况让父类感知子类的高度的两种方法*/
+      /*overflow: hidden;*/
+      /*float: left;*/
+      /*float: right;*/
+    }
+    #box>div:first-child {
+      width: 200px;
+      height:200px;
+      background-color: green;
+      float: right;
+    }
+    #box>div:nth-child(2) {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      float: right;
+    }
+    #box>div:nth-child(3) {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      float: right;
+    }
+    #box>div:last-child {
+      width: 400px;
+      height:400px;
+      background-color: blue;
+    /*  消除其他元素浮动对该元素的影响使用清除浮动*/
+      clear: both;
+    /*  float: left;*/
+
+    }
+    /*span {*/
+    /*  float: left;*/
+    /*  width: 100px;*/
+    /*  height: 100px;*/
+    /*}*/
+  </style>
+</head>
+<body>
+  <div id="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+<!--    span行内元素，没有宽高，不会独占一行-->
+<!--    <span>我是标签</span>-->
+  </div>
+</body>
+</html>

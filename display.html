@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>display</title>
+  <style>
+    div,span {
+      width: 200px;
+      height: 200px;
+    }
+    div {
+      background-color: red;
+      /*display: inline;*/
+      /*设置元素为行内块状元素，具有宽高属性并且不会独占一行，主要用于图文混排*/
+      /*display: inline-block;*/
+      /*隐藏元素*/
+      /*display: none;*/
+      display: block;
+      /*隐藏元素占用原有物理位置*/
+      /*visibility: hidden;*/
+      /*显示*/
+      /*visibility: visible;*/
+      /*设置元素透明度*/
+      opacity: 0.3;
+    }
+    span {
+      background-color: green;
+      /*display: block;*/
+    }
+  </style>
+</head>
+<body>
+<!--div:块状元素，具有宽高属性，并且独占一行-->
+  <div>这是块状元素</div>
+<!--  <div>这是块状元素</div>-->
+<!--  <div>这是块状元素</div>-->
+<!--  <div>这是块状元素</div>-->
+<!--  <div>这是块状元素</div>-->
+<!--  <div>这是块状元素</div>-->
+
+
+<!--span：行内元素，没有宽高属性，不会独占一行-->
+  <span>这是行内元素</span>
+</body>
+</html>
