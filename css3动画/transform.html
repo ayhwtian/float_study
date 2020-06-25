@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>transform</title>
+  <style>
+    #box1 {
+      width: 200px;
+      height: 200px;
+      margin: 100px;
+      border: 1px solid blue;
+    }
+    #box1:hover {
+      /*水平垂直方向移动，支持负值*/
+      /*transform: translate(30px,30px);*/
+
+      /*旋转,只支持一个参数*/
+      /*transform: rotate(15deg);*/
+
+      /*缩放。支持两个参数，水平方向和垂直方向*/
+      transform: scale(1.5);
+    }
+    #box2 {
+      width: 200px;
+      height: 200px;
+      margin: 100px;
+      border: 1px solid #CCCCCC;
+    }
+    #box2:hover {
+      transform: translate(0px,-5px);
+      box-shadow: 0px 0px 10px 5px #f4f4f4f4;
+    }
+    #box3 {
+      width: 650px;
+      height: 120px;
+      background: #eec989;
+      margin: 20px auto;
+      position: absolute;
+      top: 30px;
+      left: calc(50% - 650px / 2);
+      transition: all 1s;
+    }
+    #box3>div {
+      float: left;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    #box3:hover {
+      transform: scale(1.2);
+    }
+    #box4 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid blue;
+      margin: 100px;
+    }
+    #box4:hover {
+      /*倾斜*/
+      transform: skew(45deg,30deg);
+    }
+  </style>
+</head>
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3">
+      <div><span>350+视频教程</span></div>
+      <div><span>350+视频教程</span></div>
+      <div><span>350+视频教程</span></div>
+      <div><span>350+视频教程</span></div>
+  </div>
+  <div id="box4"></div>
+</body>
+</html>

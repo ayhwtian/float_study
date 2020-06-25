@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>动画属性</title>
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+    #banner {
+      width: 2100px;
+      height: 400px;
+      overflow: hidden;
+    }
+    #box {
+      width: 8400px;
+      height: 400px;
+      /*加入动画*/
+      animation: banner 40s infinite 1s;
+    }
+    #box>img {
+      float: left;
+    }
+    @keyframes banner {
+      35%{
+        margin-left: -2100px;
+      }
+      70% {
+        margin-left: -4200px;
+      }
+      100% {
+        margin-left: -6300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="banner">
+    <div id="box">
+      <img src="../img/1.jpg" alt="">
+      <img src="../img/2.jpg" alt="">
+      <img src="../img/3.jpg" alt="">
+      <img src="../img/4.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
