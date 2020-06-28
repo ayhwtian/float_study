@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>学习猿地课程列表页</title>
+  <style>
+    body,ul,li,a {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      text-decoration: none;
+    }
+    body {
+      background-color: #F4F4F4;
+    }
+    /*设置头部样式*/
+    header {
+      width: 100%;
+      height: 60px;
+      background: #ffffff;
+      box-shadow: 0px 0px 5px 5px #CCCCCC;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .top {
+      height: 60px;
+      width: 60%;
+      border: 1px solid red;
+      display: flex;
+      justify-content: space-between;
+    }
+    .top>div {
+      border: 1px solid blue;
+    }
+    .top_left {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      /*justify-content: center;*/
+    }
+    .top_left>img {
+      height: 50px;
+    }
+    .top_center {
+      flex-grow: 6;
+    }
+    .top_right {
+      flex-grow: 3;
+    }
+    /*导航样式*/
+    nav {
+      width: 60%;
+      height: 80px;
+      /*border: 1px solid red;*/
+      margin: 0px auto 20px;
+      background-color: #fff;
+      box-shadow: 0px 5px 5px #CCCCCC;
+      border-radius: 10px;
+    }
+    /*内容样式开始*/
+    #content {
+      width: 60%;
+      border:1px solid blue;
+      margin: 0px auto 20px;
+    }
+    .content {
+      width: 100%;
+      /*border: 1px solid green;*/
+      /*height: 300px;*/
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .content>div {
+      margin: 5px 10px;
+      width: 23%;
+      height: 200px;
+      border: solid 1px green;
+    }
+    #page {
+      width: 60%;
+      margin: 0px auto 20px;
+      /*border: 1px solid red;*/
+    }
+    #page>ul {
+      margin: 0px auto;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      /*padding: 10px;*/
+      /*border: 1px solid blue;*/
+
+    }
+    #page>ul>li>a{
+      font-size: 18px;
+      margin: 0px 10px;
+      /*border: 1px solid red;*/
+      background-color: #Ffffff;
+      color: #c0ccda;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+    #page>ul>li>a>span {
+      font-size: 16px;
+      color: #c0ccda;
+      /*font-weight: bold;*/
+    }
+    /*底部样式*/
+    footer {
+      width: 100%;
+      background: #Ffffff;
+      height: 370px;
+    }
+    .footer {
+      width: 60%;
+      height: 350px;
+      border: 1px solid red;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .footer_bottom {
+      width: 60%;
+      margin: 0px auto;
+      color: #8592a0;
+      text-align: center;
+    }
+    .footer_left {
+      border: 1px solid red;
+      flex-grow: 1;
+    }
+    .footer_center {
+      border: 1px solid blue;
+      flex-grow: 2;
+    }
+    .footer_right {
+      border: 1px solid green;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="top">
+      <div class="top_left">
+        <img src="./img/20191111114704.jpg" alt="">
+      </div>
+      <div class="top_center">
+        <ul>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div>
+      <div class="top_right">3</div>
+    </nav>
+  </header>
+  <!--导航开始-->
+  <nav></nav>
+  <!--内容区域-->
+  <div id="content">
+    <div class="content">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="content">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="content">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+ <!--分页-->
+  <div id="page">
+    <ul>
+      <li><a href=""><i>Last</i></a></li>
+      <li><a href=""><span>1</span></a></li>
+      <li><a href=""><span>2</span></a></li>
+      <li><a href=""><span>3</span></a></li>
+      <li><a href=""><span>4</span></a></li>
+      <li><a href=""><span>5</span></a></li>
+      <li><a href=""><span>6</span></a></li>
+      <li><a href=""><span>7</span></a></li>
+      <li><a href=""><i>Next</i></a></li>
+    </ul>
+  </div>
+  <!--底部样式-->
+  <footer id="footer">
+    <div class="footer">
+      <div class="footer_left"></div>
+      <div class="footer_center"></div>
+      <div class="footer_right"></div>
+    </div>
+    <div class="footer_bottom">
+      © 辽ICP备19013136号
+    </div>
+  </footer>
+</body>
+</html>
