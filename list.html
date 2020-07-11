@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>学习猿地课程列表页</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1897441_mjky5463a6.css">
   <style>
     body,ul,li,a {
       margin: 0px;
@@ -17,7 +18,7 @@
     header {
       width: 100%;
       height: 60px;
-      background: #ffffff;
+      background: rgba(232, 232, 232, 0.99);
       box-shadow: 0px 0px 5px 5px #CCCCCC;
       display: flex;
       justify-content: center;
@@ -26,30 +27,76 @@
     .top {
       height: 60px;
       width: 60%;
-      border: 1px solid red;
+      /*border: 1px solid red;*/
       display: flex;
       justify-content: space-between;
     }
-    .top>div {
-      border: 1px solid blue;
-    }
     .top_left {
+      height: 60px;
       flex-grow: 1;
       display: flex;
       align-items: center;
-      /*justify-content: center;*/
     }
     .top_left>img {
       height: 50px;
     }
     .top_center {
-      flex-grow: 6;
+      flex-grow: 8;
+    }
+    .top_center>ul,.top_right>ul {
+      height: 60px;
+      display: flex;
+      /*border: 1px solid red;*/
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top_center>ul>li>a,.top_right>ul>li>a {
+      font-size: 14px;
+      color: rgba(31,45,65,0.5);
+      font-weight: bold;
     }
     .top_right {
       flex-grow: 3;
     }
+    .top_right>ul {
+      justify-content: space-around;
+    }
+    .top_center>ul>li:first-child:hover>#top_nav {
+      display: block;
+    }
+    #top_nav {
+      /*border: 3px solid black;*/
+      position: absolute;
+      top:55px;
+      margin-left: -10px;
+      z-index: 2;
+      display: none;
+    }
+    #top_nav>i {
+      position: absolute;
+      top: -16px;
+      left: 10px;
+      color: #ffffff;
+      font-size: 30px;
+      text-shadow: #ffffff 0 0 5px;
+    }
+    #top_nav>ul>li {
+      /*border: 1px solid #FF0000;*/
+      padding: 20px 10px;
+      background: #ffffff
+    }
+    #top_nav>ul>li>a>img {
+      float: left;
+      width: 40px;
+      margin-top: -10px;
+      margin-right: 10px;
+    }
+    #top_nav>ul>li>a>span {
+      font-size: 14px;
+      color: #8592a0;
+    }
     /*导航样式*/
-    nav {
+    #nav {
       width: 60%;
       height: 80px;
       /*border: 1px solid red;*/
@@ -57,6 +104,20 @@
       background-color: #fff;
       box-shadow: 0px 5px 5px #CCCCCC;
       border-radius: 10px;
+    }
+    #nav>ul {
+      height: 80px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #nav>ul>li  {
+      border-radius: 5px;
+      padding: 10px 20px;
+      background-color: #8492a6;
+    }
+    #nav>ul>li>a {
+      color: #ffffff;
     }
     /*内容样式开始*/
     #content {
@@ -148,22 +209,57 @@
       </div>
       <div class="top_center">
         <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          <li>
+            <a href="">
+            更多课程<i class="icon-icon-test iconfont"></i>
+            </a>
+            <div id="top_nav">
+              <i class="icon-lingxing iconfont"></i>
+              <ul>
+                <li><a href=""><img src="./demo/img/java.jpg" alt=""><span>Java开发工程师</span></a></li>
+                <li><a href=""><img src="./demo/img/python.jpg" alt=""><span>Python开发工程师</span></a></li>
+                <li><a href=""><img src="./demo/img/php.jpg" alt=""><span>PHP开发工程师</span></a></li>
+                <li><a href=""><img src="./demo/img/go.jpg" alt=""><span>GO开发工程师</span></a></li>
+                <li><a href=""><img src="./demo/img/data.jpg" alt=""><span>大数据开发工程师</span></a></li>
+                <li><a href=""><img src="./demo/img/html5.jpg" alt=""><span>前端开发工程师</span></a></li>
+                <li><a href=""><img src="./demo/img/ui.jpg" alt=""><span>UI/UE全能设计师</span></a></li>
+                <li><a href=""><img src="./demo/img/linux.jpg" alt=""><span>Linux运维工程师</span></a></li>
+                <li><a href=""><img src="./demo/img/zs4.png" alt=""><span>职业技能等级证书</span></a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">猿生态</a></li>
+          <li><a href="">猿著</a></li>
+          <li><a href="">猿创试题</a></li>
+          <li><a href="">猿材料</a></li>
+          <li><a href="">猿工手册</a></li>
+          <li><a href="">猿代码</a></li>
+          <li><a href="">猿圈</a></li>
+          <li><a href="">猿来如此</a></li>
         </ul>
       </div>
-      <div class="top_right">3</div>
+      <div class="top_right">
+        <ul>
+          <li><a href="">登录</a></li>
+          <li><a href="">注册</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <!--导航开始-->
-  <nav></nav>
+  <nav id="nav">
+    <ul>
+      <li><a href="">全部</a></li>
+      <li><a href="">Java</a></li>
+      <li><a href="">Python</a></li>
+      <li><a href="">PHP</a></li>
+      <li><a href="">Go</a></li>
+      <li><a href="">大数据</a></li>
+      <li><a href="">前端</a></li>
+      <li><a href="">UI/UE</a></li>
+      <li><a href="">Linux</a></li>
+    </ul>
+  </nav>
   <!--内容区域-->
   <div id="content">
     <div class="content">

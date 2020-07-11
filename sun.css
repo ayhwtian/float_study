@@ -1,0 +1,68 @@
+/*编写css*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /*天空默认颜色*/
+  background-color: skyblue;
+
+  /*动画*/
+  animation: bgChange 15s linear infinite;
+}
+
+.eclipse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  /*居中*/
+  margin: auto
+}
+
+.eclipse-after {
+  animation: eclipse 15s linear infinite;
+}
+
+.eclipse-before {
+  background-color: #fff;
+  animation: shadow 15s linear infinite;
+}
+
+/*编写动画*/
+
+@keyframes bgChange {
+  0%, 100% {
+    background-color: skyblue;
+  }
+  45%,60% {
+    background-color: #282c34;
+  }
+}
+
+@keyframes shadow {
+  50% {
+    box-shadow: 0 0 10px 5px #Ffffff;
+  }
+}
+
+@keyframes eclipse {
+  0% {
+    left: 300px;
+    background: skyblue;
+  }
+  45%,60% {
+    left: 0;
+    background: #282c34;
+  }
+  100% {
+    left: -300px;
+    background: skyblue;
+  }
+}
